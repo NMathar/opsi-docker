@@ -31,7 +31,7 @@ RUN apt-get update -qq
 
 RUN apt-get -y remove tftpd
 
-RUN apt-get install -y -qq opsi-atftpd opsiconfd opsi-depotserver opsi-configed
+RUN apt-get install -y -qq --force-yes opsi-atftpd opsiconfd opsi-depotserver opsi-configed
 
 RUN apt-get clean
 
